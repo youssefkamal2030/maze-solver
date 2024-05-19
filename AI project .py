@@ -1,7 +1,7 @@
 # This program uses a library to generate the maze, the library is called pyamaze
 # You can install this library using pip by 'pip install pyamaze' or you can run 'pip install -r requirements' in this directory
 from pyamaze import maze, COLOR, agent
-
+import random
 # This function read text from a file named "maze_config.txt" and extract corresponding variables to form the maze
 def extract_variables(file_name):
     with open(file_name, "r") as file:
@@ -138,6 +138,8 @@ def main_path(maze):
     return main_path
 
 if __name__=='__main__':
+    #this line to ensure the same maze is generated on every run of the program
+    random.seed(42)
     # Initialize the maze and its size
     m=maze(rows=maze_rows, cols=maze_columns)
     # Show the end location in the maze
