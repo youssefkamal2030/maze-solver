@@ -1,0 +1,1 @@
+This application demonstrates the Depth-First Search (DFS) algorithm by solving a maze puzzle. The primary goal is to find all possible paths and the shortest path from the start point to the end point. The application visualizes the process, making it easier to understand how DFS works in a maze-solving scenario.
